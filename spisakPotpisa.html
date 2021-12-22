@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<div class="navbar">
+<nav>
+<ul>
+  <li><a href="Korisnik.php">Naslovna</a></li>
+  <li><a href="peticija.html">Peticija</a></li>
+  <li><a href="vesti.html">Vesti</a></li>
+  <li><a class="active" href="spisakPotpisa.html">Potpisi</a></li>
+  <li><a href="potpisi.php">Potpiši</a></li>
+  <li><a href="#">Organizacija</a>
+<ul>
+<li><a href="UlogujSe.html">Uloguj se</a></li>
+<li><a href="Registracija.html">Registracija</a></li>
+
+</ul></li>
+
+<li><a href="kontakt.html">Kontakt</a></li>
+</ul></li>
+
+</ul></nav>
+
+</div>
+<br><br><br>
+<div>
+<h1>Potpisi</h1><br>
+<div><center>
+<table>
+<tr>
+<th>No</th>
+<th>Ime</th>
+<th>Prezime</th>
+<th>Komentar</th>
+</tr>
+<?php
+include 'database.php';
+$signatures=getAllSignatures();
+if($signatures){
+while($row=$signatures->fetch_row()){
+echo "<tr>
+<td></td>
+<td>".$row[2]." </td>
+<td>".$row[3]."</td>
+<td>".$row[10]."</td>
+</tr>";
+
+}}
+?>
+
+
+</table>
+</center>
+</div>
+
+
+</div>
+
+</body>
+</html>

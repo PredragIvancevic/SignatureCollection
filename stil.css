@@ -1,0 +1,320 @@
+body{
+	background:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(patern.jpg);
+	margin-top:0;
+	margin-left:0;
+	margin-right:0;
+	margin-bottom:0;
+	border:none;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	line-height:1.6;
+	font-size:18px;
+	
+}
+.header{
+	background-image:url("pozadina.jpg");
+	width:100%;
+	height:200px;
+}
+nav ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+	border:none;
+	display:flex;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #008CBA;
+	width: 150px;
+	margin:0;
+	margin-left:0;
+	margin-right:0;
+	padding:0;
+	border:none;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 50px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: #000000; 
+}
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 78px; 
+	
+}
+	
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+nav ul ul li {
+	width:210px;
+	float:none;
+	display:list-item;
+	position: relative;
+	
+}
+
+
+
+.navbar {
+  display: flex;
+  background-color: #008CBA;
+  width:100%
+}
+
+.navbar a {
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#C{
+
+width:30%;
+height:660px;
+padding-top:10px;
+padding-right:10px;
+padding-bottom:10px;padding-left:10px;
+flex-grow:1;
+overflow:scroll;
+border-top:none;
+
+
+}
+#D{
+
+width:70%;
+height:400px;
+padding-top:10px;padding-left:10px;
+padding-bottom:10px;padding-right:10px;
+flex-grow:3;
+border-left:none;
+border-top:none;
+}
+h1{
+text-align:center;}
+
+h2{
+text-align:left;
+margin-left:20px;
+}
+p{
+	padding:20px;
+}
+.comm{
+font-style: oblique;
+font-weight:bold;
+}
+img{
+	
+display:block;
+margin-left:auto;
+margin-right:auto;
+
+height:400px;
+}
+
+.button{
+	background-color:#008CBA;
+	border:black;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:20px;
+    margin:4px 10px;
+cursor:pointer;
+padding:15px 32px;	
+border-radius:8px;
+width:150px;
+height:50px;
+font-family:font-family:"Trebuchet MS", Helvetica, sans-serif;
+	
+}
+.button:hover{
+	background-color:#00334d;
+	color:white;
+}
+.dugme{
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.butt{
+	background-color:#008CBA;
+	border:black;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+cursor:pointer;	
+border-radius:8px;
+font-family:font-family:"Trebuchet MS", Helvetica, sans-serif;
+width:75px;
+height:30px;
+font-size:16px;
+	
+}
+.butt:hover{
+	background-color:#00334d;
+	color:white;
+}
+button a{
+	color:white;
+	font-size:20px;
+	text-decoration:none;
+}
+button a:hover{
+	background-color:#00334d;
+	color:white;
+}
+table{
+
+
+counter-reset: rowNumber;
+margin-bottom:20px;
+border-collapse:collapse;
+}
+
+ th, td {
+ text-align:left;
+padding:15px;
+border-bottom: 1px solid #008CBA;
+font-size:16px;
+}
+table tr>td:first-child{
+counter-increment:rowNumber;
+}
+tr:hover{background-color:azure;}
+table tr td:first-child::before {
+    content: counter(rowNumber) ". ";
+}
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+text-align:center;
+  }
+input{
+width: 300px;
+border-radius:4px;
+
+}
+textarea{
+border-radius:4px;	
+}
+label{
+display:block; width:300px; height:3px; text-align:left;
+}
+input[type=radio]{
+width:20px;
+}
+input[type=submit]{
+	background-color:#008CBA;
+	border:black;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:20px;
+    margin:4px 10px;
+cursor:pointer;
+font-family:font-family:"Trebuchet MS", Helvetica, sans-serif;
+border-radius:8px;
+}
+input[type=submit]:hover{
+	background-color:#00334d;
+	color:white;
+}
+.floatcontact{
+display: flex;
+  flex-direction: row;
+}
+
+.contactLeft {
+width:20%;
+height:400px;
+flex-grow:1;
+}
+
+.contactRight{
+width:50%;
+height:400px;
+flex-grow:1;
+}
+#PodaciVlasnik{
+text-align:left;
+}
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+ width:100%;
+ height:auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+label[for="date"]{
+height:12px;
+line-height:1.2;
+}
+li a.active {
+  background-color: #00334d;
+  color: white;
+  margin-left:0;
+  margin-right:0;
+}
+#termini{
+width:300px;
+}

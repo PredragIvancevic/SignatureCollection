@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<div class="navbar">
+<nav>
+<ul>
+  <li><a href="Korisnik.php">Naslovna</a></li>
+  <li><a href="peticija.html">Peticija</a></li>
+  <li><a class="active" href="vesti.html">Vesti</a></li>
+  <li><a href="spisakPotpisa.html">Potpisi</a></li>
+  <li><a href="potpisi.php">Potpiši</a></li>
+  <li><a href="#">Organizacija</a>
+<ul>
+<li><a href="UlogujSe.html">Uloguj se</a></li>
+<li><a href="Registracija.html">Registracija</a></li>
+</ul></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+
+</ul></nav>
+
+</div>
+<br><br><br>
+<div>
+<h1>Najnovije vesti novinara Miloša Marinkovića</h1>
+<br><br>
+<ul>
+  <ul>
+  <li><a href="ItalijaProblemi.html">Dok Italija pokušava da obuzda
+  katastrofu na severu, s juga stize NOVI PROBLEM
+  i širi se kao požar</a></li>
+  <li><a href="Rodik.html">Rodik: Ako se Novak izjednači po Slemovima, on je GOAT</a></li>
+  <li><a href="LS.html">Ronaldo, Bufon, Toti i ostale legende bez trofeja u LŠ</a></li>
+  <li><a href="njujork.html">Njujork: 818 policajaca obolelo od koronavirusa</a></li>
+  <li><a href="IzRusije.html">Iz Rusije s ljubavlju</a></li>
+  <li><a href="NemackaPrivredaCeSeBrzoOporaviti.html">Nemačka privreda ce se brzo oporaviti</a>
+  <?php
+        include 'database.php';
+         $news=getAllNews();
+         if($news){
+           while($row=$news->fetch_row()){
+          if($row[2]!=''){
+          echo"<br>";
+          echo $row[2];
+}
+}}
+?>
+</ul>
+</div>
+
+</body>
+</html>

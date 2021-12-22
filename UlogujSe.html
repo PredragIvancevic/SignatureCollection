@@ -1,0 +1,46 @@
+<?php include('registration.php')?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="stil.css">
+<script src="pet_sekundi.js"></script>
+</head>
+<body>
+<div class="navbar">
+<nav>
+<ul>
+  <li><a href="Korisnik.html">Naslovna</a></li>
+  <li><a href="peticija.html">Peticija</a></li>
+  <li><a href="vesti.html">Vesti</a></li>
+  <li><a href="spisakPotpisa.html">Potpisi</a></li>
+  <li><a href="potpisi.html">Potpiši</a></li>
+  <li><a class="active" href="#">Organizacija</a>
+<ul>
+<li><a class="active" href="UlogujSe.html">Uloguj se</a></li>
+<li><a href="Registracija.html">Registracija</a></li>
+</ul></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+
+</ul></nav>
+
+</div>
+<br><br>
+
+<div><center>
+<h1>Uloguj se</h1>
+
+<form method="post" action="UlogujSe">
+ <?php include('errors.php'); ?> 
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email"><br><br>
+<label for="pwd">Password:</label><br>
+<input type="password" id="pwd" name="pwd"><br><br>
+<input type="submit" value="Uloguj se" name="ulogujSe">
+
+
+</center>
+</form>
+</div>
+</body>
+</html>
